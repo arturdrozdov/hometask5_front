@@ -1,0 +1,169 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header {
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    background-color: rgb(211, 183, 20);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content,
+title {
+    text-align: center;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.logo {
+    width: 170px;
+}
+
+.main-content .text,
+.title {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.content {
+    flex: 1 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-cards {
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(33.33333% - 35px);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+
+.card:hover {
+    background-color: rgb(245, 240, 233);
+}
+
+.card-icon {
+    width: 100px;
+    height: 100px;
+    border: 7px solid rgb(170, 168, 168);
+    border-radius: 50%;
+    background: url(https://arcpalace.com.ua/images/43/plitka-400kh400-bleyz-2-p-48737904222475_small10.jpg);
+}
+
+.btn {
+    margin-bottom: 10px;
+}
+
+.btn a:hover {
+    background-color: rgb(56, 56, 56);
+}
+
+.btn a {
+    padding: 8px 18px;
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+}
+
+.aside {
+    min-width: 210px;
+    /* background-color: pink; */
+    text-align: center;
+    padding: 20px;
+}
+
+.aside1 {
+    order: -1;
+    background-color: rgb(199, 152, 185);
+}
+
+.aside2 {
+    background-color: rgb(156, 177, 199);
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(131, 230, 131);
+    text-align: center;
+    flex-shrink: 0;
+    padding: 10px;
+}
+
+.holder {
+    margin: 50px auto 50px;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /* position: relative; */
+    overflow: hidden;
+
+}
+
+div[class='item']:first-child {
+    order: -5;
+    background-color: rgb(253, 100, 77);
+    /* flex-grow: 3; */
+    flex-basis: 50%;
+}
+
+div[class='item']:last-child {
+    order: -4;
+    background-color: rgb(253, 164, 41);
+    flex-basis: 50%;
+    /* flex-grow: 3; */
+}
+
+div[class='item']:nth-child(3) {
+    order: -3;
+    background-color: rgb(102, 55, 151);
+    flex-grow: 2;
+}
+
+div[class='item']:nth-child(2) {
+    order: -2;
+    background-color: rgb(73, 131, 178);
+    flex-grow: 2;
+}
+
+div[class='item']:nth-child(4) {
+    order: -1;
+    background-color: rgb(14, 127, 18);
+    flex-grow: 2;
+}
